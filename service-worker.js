@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/myNatCapViewer_RSCC/precache-manifest.9e6b7539fb7359254f9b8eb1608d8e09.js"
+  "/myNatCapViewer_RSCC/precache-manifest.50b572e6f62314d7d4a1a8c9a8ae506d.js"
 );
 
 self.addEventListener('message', (event) => {

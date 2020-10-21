@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "285a9828d35a51e6d032665ac253ebb2",
+    "revision": "e722e6bf70d45faaf148c44b28499427",
     "url": "/myNatCapViewer_RSCC/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/myNatCapViewer_RSCC/static/css/2.0b5659ac.chunk.css"
   },
   {
-    "revision": "5d0ce5f68d89213f0378",
+    "revision": "6e54b3080eb21abbe42f",
     "url": "/myNatCapViewer_RSCC/static/css/main.dfa9379b.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/myNatCapViewer_RSCC/static/js/2.ab97a2f6.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5d0ce5f68d89213f0378",
-    "url": "/myNatCapViewer_RSCC/static/js/main.df709685.chunk.js"
+    "revision": "6e54b3080eb21abbe42f",
+    "url": "/myNatCapViewer_RSCC/static/js/main.ccf27bd6.chunk.js"
   },
   {
     "revision": "f9f50252aeec2e1285a2",
