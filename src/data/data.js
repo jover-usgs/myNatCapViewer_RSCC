@@ -11,7 +11,7 @@ function Data() {
         showInfoButton: true, // show more information for all data sections
         showDownloadButton: true, // show download button if there is a link to the dataset
         chartIsLinkedTo: 4, // the datasetID the chart should be linked to, if no linking write chartIsLinkedTo: null
-        showLandingPage: true, // toggle landing page
+        showLandingPage: false, // toggle landing page
       },
 
       // ADD YOUR BASEMAP HERE
@@ -48,14 +48,16 @@ function Data() {
       dataSections: [
         {
           id: 0,
-          title: "First data section",
+          title: "RSCC Outer Banks Viewer",
           infotext: [
             {
               subtitle: "Description",
               text: (
                 <div>
-                  This section includes two shapefiles, one polygon and one pointmap. The
-                  pointmap has tooltips and popups that are displayed when the icon is
+                  This section includes shapefiles that delineate a rough
+                  imagery footprint of manned aerial flights of the Outer Banks of North Carolina
+                  , point locations of GRound COntrol points, and digital elevation models of the
+                  North Core Banks. The pointmap has tooltips and popups that are displayed when the icon is
                   clicked.{" "}
                   <a
                     href="https://github.com/charlottegiseleweil/viewerTemplate"
@@ -67,12 +69,11 @@ function Data() {
               ),
             },
             {
-              subtitle: "Method",
+              subtitle: "Methods",
               text: (
                 <div>
-                  Lorem ipsum dolor sit amet,consectetuer adipiscing elit. Aenean commodo
-                  ligula eget dolor.Aenean massa. Cum sociis natoque penatibus et magnis
-                  disparturient montes, nascetur ridiculus mus.
+                  USGS contractor Wayne Wright collected imagery and with the imagery
+                  structure-from-motion was used to create 3D models of the coastal system. 
                 </div>
               ),
             },
@@ -82,7 +83,7 @@ function Data() {
         },
         {
           id: 1,
-          title: "Second data section",
+          title: "",
           infotext: [
             {
               subtitle: "Description",
@@ -125,27 +126,26 @@ function Data() {
        */
       datasets: [
         {
-          id: 0,
-          sectionID: 0,
-          title: "Shapefile (polygons)",
+          id: 0, // order in the dataset array
+          sectionID: 0, // ID of the section the layer belongs to
+          title: "RSCC Flight ROI", // Add your own title
           type: "shapefile",
-          src: "AOI.zip",
-          style: Style().redOutline,
-          legendSrc: "exampleLegend3.png",
-          selected: false,
-          link: "https://en.wikipedia.org/wiki/Region_of_interest",
+          //style: Style().redOutline,
+          src: "Final_RSCC_ROIs.zip", // the name of your shapefile zip
+          //legendSrc: "exampleLegend3.png", // the legend -- remove if you don't want a legend
+          selected: true, // choose if the layer should be displayed by default
         },
         {
           id: 1,
           sectionID: 0,
-          title: "Shapefile (points)",
+          title: "Pea Island GCPs",
           type: "shapefile",
-          src: "nationalParks.zip",
-          legendSrc: "nationalParksLegend.png",
+          src: "PeaIsland_GCPs.zip",
+          //legendSrc: "nationalParksLegend.png",
           selected: false,
-          icon: "forest.svg",
-          tooltip: Tooltip().nameTooltip,
-          popup: Popup().examplePopup,
+          icon: "house.svg",
+          //tooltip: Tooltip().nameTooltip,
+          //popup: Popup().examplePopup,
         },
         {
           id: 2,
